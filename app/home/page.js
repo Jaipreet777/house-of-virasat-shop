@@ -2,14 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from './firebase';  // Firebase Firestore reference
+import { db } from '../../firebase';  // Firebase Firestore reference
 import Link from 'next/link';  // For navigation
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [categories, setCategories] = useState(['All', 'Suit', 'Phulkari', 'Lehanga', 'Dupata']); // Example categories
+  const [categories, setCategories] = useState(['All', 'Electronics', 'Fashion', 'Home Appliances', 'Books']); // Example categories
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   // Fetch products from Firestore
