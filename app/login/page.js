@@ -96,3 +96,5 @@ const linkStyle = {
   marginLeft: '5px',
 };
 
+
+//ref: chatgpt - how to intialize firebase email and password authentication.

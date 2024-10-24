@@ -103,3 +103,6 @@ const errorStyle = {
   fontSize: '1rem',
   marginBottom: '10px',
 };
+
+
+//ref: chatgpt - how to intialize firebase email and password authentication.
