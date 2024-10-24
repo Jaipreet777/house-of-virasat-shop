@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../../firebase';  // Firebase Firestore reference
+import { db } from '../firebase';  // Firebase Firestore reference
 import Link from 'next/link';  // For navigation
 
 export default function HomePage() {
@@ -189,3 +189,6 @@ const productPriceStyle = {
   fontWeight: 'bold',
   color: '#007bff',
 };
+
+
+// ref: chatgpt - help me fetch items stored in firebase on my home screen
